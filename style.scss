@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+nav {
+    height: 44px;
+    background-color: #000000;
+    .nav-wrapper {
+        max-width: 700px;
+        margin: auto;
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: inline;
+            li {
+                color: #ffffff;
+                line-height: 44px;
+                font-family: "Open Sans", sans-serif;
+                padding: 0 10px 0 10px;
+                display: inline-block;
+                &:hover {
+                    background-color: rgb(181, 207, 245);
+                    text-decoration: underline;
+                    cursor: pointer;
+                    color: #000000;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        .download-btn {
+            background-color: #6fd1bd;
+            line-height: 44px;
+            border: none;
+            height: 44px;
+            padding: 0 20px;
+            color: #ffffff;
+            @media screen and (max-width: 500px) {
+                /* display: none; */
+                display: none;
+            }
+            &:hover {
+                background-color: salmon;
+            }
+        }
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+    //background-color: white;
+    height: 250px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.myName {
+    font-size: 59px;
+    font-family: "Open Sans", sans-serif;
+    .shadow {
+        text-shadow: -5px 2px lightblue;
+    }
+    .hover:hover {
+        text-shadow: -3px 3px red;
+        transition: all 0.2s linear;
+    }
+}
+
+.nav-line {
+    height: 8px;
+    background-color: #000000;
+    margin-top: -55px;
+    margin-left: 0px;
+}
+
+.nav-fd {
+    font-size: 22px;
+}
+
+.sec1 {
+    display: flex;
+    padding-left: 10px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15px;
+    .profile {
+        margin-left: 120px;
+        text-align: left;
+    }
+}
+
+.hr {
+    display: flex;
+    padding-left: 10px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.sec2 {
+    display: flex;
+    padding-left: 10px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15px;
+    .skills {
+        margin-left: 120px;
+        text-align: left;
+    }
+    .an1 {
+        background-color: lightblue;
+        line-height: 40px;
+        border: none;
+        height: 40px;
+        width: 40px;
+        &:hover {
+            z-index: -1;
+            transform: scale(1.5);
+            background-color: #6fd1bd;
+            padding: 10px;
+            //transition: transform .4s;
+            /* Animation */
+            margin: 0 auto;
+            transition-property: all;
+            transition-duration: 0.8s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.4s;
+        }
+    }
+}
+
+.sec3 {
+    display: flex;
+    padding-left: 10px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.sec4 {
+    display: flex;
+    padding-left: 10px;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 10px;
+    .an2 {
+        background-color: lightblue;
+        line-height: 40px;
+        border: none;
+        height: 40px;
+        width: 40px;
+        &:hover {
+            transform: scale(1.5);
+            background-color: #6fd1bd;
+            padding: 10px;
+            transition: transform .2s;
+            /* Animation */
+            margin: 0 auto;
+            transition-property: all;
+            transition-duration: 0.8s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.4s;
+        }
+    }
+}
+
+.contacts ul {
+    display: flex;
+    max-width: 700px;
+    margin: auto;
+    flex-direction: column;
+    margin: auto;
+    list-style: none;
+    margin-top: 119px;
+    li {
+        font-size: 15px;
+        font-family: "Open Sans", sans-serif;
+        margin-left: 320px;
+        text-align: right;
+        u:hover {
+            text-decoration-color: #d16fc9;
+            cursor: pointer;
+        }
+    }
+}
